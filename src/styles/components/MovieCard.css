@@ -1,0 +1,17 @@
+/* Hiệu ứng chuyển động mượt mà cho card phim */
+.movie-card {
+  transition: all 0.3s ease;
+}
+
+/* Hiệu ứng hover phóng to và thêm bóng đổ */
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Điều chỉnh hiệu ứng hover cho màn hình mobile */
+@media (max-width: 640px) {
+  .movie-card:hover {
+    transform: scale(1.02);
+  }
+}
